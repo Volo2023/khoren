@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>11</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200817155833_InitialDB.cs" />
+    <Compile Remove="Migrations\20200817155833_InitialDB.Designer.cs" />
+    <Compile Remove="Migrations\20200817162831_InitialDB.cs" />
+    <Compile Remove="Migrations\20200817162831_InitialDB.Designer.cs" />
+    <Compile Remove="Migrations\20200904133018_Branches.cs" />
+    <Compile Remove="Migrations\20200904133018_Branches.Designer.cs" />
+    <Compile Remove="Migrations\20200904133331_Branches.cs" />
+    <Compile Remove="Migrations\20200904133331_Branches.Designer.cs" />
+    <Compile Remove="Migrations\20200904133544_Branches.cs" />
+    <Compile Remove="Migrations\20200904133544_Branches.Designer.cs" />
+    <Compile Remove="Migrations\20200904134447_Branches.cs" />
+    <Compile Remove="Migrations\20200904134447_Branches.Designer.cs" />
+    <Compile Remove="Migrations\20200904144346_Branches.cs" />
+    <Compile Remove="Migrations\20200904144346_Branches.Designer.cs" />
+    <Compile Remove="Migrations\20200904144636_Branches.cs" />
+    <Compile Remove="Migrations\20200904144636_Branches.Designer.cs" />
+    <Compile Remove="Migrations\20200926190734_Credits.cs" />
+    <Compile Remove="Migrations\20200926190734_Credits.Designer.cs" />
+    <Compile Remove="CopilotTests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="CopilotTests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="CopilotTests\**" />
+  </ItemGroup>
+
+</Project>
